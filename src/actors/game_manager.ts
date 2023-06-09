@@ -20,8 +20,7 @@ export class GameManager {
     private lastTimestamp: number;
 
     constructor(public canvas: HTMLCanvasElement) {
-        this.canvas.style.backgroundImage = 'url("src/assets/img/SNAKE.jpeg")'; // Establecer la imagen como fondo del canvas
-
+        this.canvas.style.backgroundImage = 'url("public/background.jpeg")';
         this.ekans = new Ekans();
         this.ekans.image.onload = () => {
             this.start();

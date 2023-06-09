@@ -16,7 +16,7 @@ export class Ekans extends Actor {
         super(position);
         this.initialPosition = position;
         this.image = new Image();
-        this.image.src = "SNAKE.jpeg";
+        this.image.src = "background.jpeg";
         this.imagePositions = [0, 1, 2];
         this.currentImagePosition = 0;
         this.timer = 0;
