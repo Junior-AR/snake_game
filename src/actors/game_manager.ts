@@ -4,7 +4,6 @@ import { Apple } from "./apple";
 import { ScoreViewer } from "./score";
 import { Snake } from "./snake";
 import { Music } from "./music";
-import { Ekans } from "./background";
 import { FPSViewer } from "./fps_viewer";
 import { Timer } from "./timer";
 
@@ -13,18 +12,15 @@ export class GameManager {
     public apple: Apple;
     public scoreViewer: ScoreViewer;
     public snake: Snake;
-    public ekans: Ekans;
+
     public music: Music;
     public fpsViewer: FPSViewer;
     public timer: Timer;
     private lastTimestamp: number;
 
     constructor(public canvas: HTMLCanvasElement) {
-        this.canvas.style.backgroundImage = 'url("public/background.jpeg")';
-        this.ekans = new Ekans();
-        this.ekans.image.onload = () => {
-            this.start();
-        };
+        this.canvas.style.backgroundImage = 'url("background.jpeg")';
+
         this.timer = new Timer();
         this.scoreViewer = new ScoreViewer();
         this.fpsViewer = new FPSViewer();
@@ -46,7 +42,6 @@ export class GameManager {
         );
 
         this.actors = [
-            this.ekans,
             this.snake,
             this.apple,
             this.scoreViewer,
