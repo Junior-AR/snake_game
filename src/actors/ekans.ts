@@ -16,7 +16,7 @@ export class Ekans extends Actor {
         super(position);
         this.initialPosition = position;
         this.image = new Image();
-        this.image.src = "src/assets/img/snake1.jpg";
+        this.image.src = "src/assets/img/SNAKE.jpeg";
         this.imagePositions = [0, 1, 2];
         this.currentImagePosition = 0;
         this.timer = 0;
@@ -28,10 +28,16 @@ export class Ekans extends Actor {
         // Ekans Image
         ctx.drawImage(
             this.image,
+            0,
+            0,
+            this.size.w,
+            this.size.h,
             this.position.x,
             this.position.y,
-            size.x,
-            size.y
+            this.size.w,
+            this.size.h
         );
+
+        ctx.translate(-this.position.x, -this.position.y);
     }
 }

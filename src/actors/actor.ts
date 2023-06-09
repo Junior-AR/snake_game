@@ -1,5 +1,5 @@
-import { PointInterface } from '../interfaces/point';
-import { ActorInterface } from './../interfaces/actor.d';
+import { PointInterface } from "../interfaces/point";
+import { ActorInterface } from "./../interfaces/actor.d";
 
 export class Actor implements ActorInterface {
     constructor(public position: PointInterface) {
@@ -7,7 +7,11 @@ export class Actor implements ActorInterface {
     }
 
     update(delta: number, size?: PointInterface) {}
-    draw(ctx: CanvasRenderingContext2D, size?: PointInterface, delta?: number) {}
+    draw(
+        ctx: CanvasRenderingContext2D,
+        size?: PointInterface,
+        delta?: number
+    ) {}
     keyboardEventDown(key: string) {}
     keyboardEventUp(key: string) {}
     restart() {}
