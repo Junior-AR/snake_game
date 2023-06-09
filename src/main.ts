@@ -1,5 +1,4 @@
 import { player1Controllers } from "./utils/keyboradMap";
-
 import { GameManager } from "./actors/game_manager";
 
 window.onload = () => {

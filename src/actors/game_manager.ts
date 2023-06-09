@@ -4,7 +4,7 @@ import { Apple } from "./apple";
 import { ScoreViewer } from "./score";
 import { Snake } from "./snake";
 import { Music } from "./music";
-import { Ekans } from "./ekans";
+import { Ekans } from "./background";
 import { FPSViewer } from "./fps_viewer";
 import { Timer } from "./timer";
 

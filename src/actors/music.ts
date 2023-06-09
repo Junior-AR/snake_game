@@ -7,7 +7,7 @@ export class Music extends Actor {
     constructor(public position: PointInterface = { x: 0, y: 0 }) {
         super(position);
         this.audio = new Audio();
-        this.audio.src = "src/assets/sounds/melody.mp3";
+        this.audio.src = "melody.mp3";
 
         // Configuración dew audio
         this.audio.autoplay = true;
