@@ -6,10 +6,12 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "ghbuild" : "vite build --outDir docs --base=/snake_game"
   },
   "devDependencies": {
     "typescript": "^5.0.2",
     "vite": "^4.3.2"
   }
+  
 }
